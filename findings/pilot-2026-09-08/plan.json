@@ -1,0 +1,56 @@
+{
+  "models": [
+    "anthropic/claude-opus-5",
+    "openai/gpt-6-astra",
+    "x-ai/grok-4.6"
+  ],
+  "mode": "sample",
+  "leaves_per_model": 25,
+  "calls_per_model": 94,
+  "total_calls": 282,
+  "requested_output_token_cap": 72192,
+  "temperature": 0.7,
+  "max_tokens": 256,
+  "seed": 42,
+  "endpoint": "https://fal.run/openrouter/router/openai/v1/chat/completions",
+  "opening": "Let's play guess who. First lock in your answer, you cannot change it during the course of the game. I will ask five questions, and if I don't get it in five you will reveal who you were thinking of.",
+  "system": "Keep replies brief. Do not reveal the identity before question five. At question five, answer the question and reveal the identity as JSON with string fields \"answer\" and \"identity\". Use the full commonly known name.",
+  "questions": [
+    [
+      "Are you a real person?",
+      "Are you fictional?",
+      "Are you human?",
+      "Are you currently alive?",
+      "Are you primarily known for entertainment?"
+    ],
+    [
+      "Are you a woman?",
+      "Are you a man?",
+      "Are you from North America?",
+      "Are you from Europe?",
+      "Are you from Asia?"
+    ],
+    [
+      "Are you known for science?",
+      "Are you known for politics?",
+      "Are you known for music?",
+      "Are you known for acting?",
+      "Are you known for sports?"
+    ],
+    [
+      "Were you famous before 1900?",
+      "Were you famous before 1950?",
+      "Were you famous before 2000?",
+      "Have you appeared in a movie?",
+      "Have you written a book?"
+    ],
+    [
+      "Are you associated with magic?",
+      "Are you associated with space?",
+      "Are you associated with royalty?",
+      "Are you associated with comedy?",
+      "Are you associated with war?"
+    ]
+  ],
+  "note": "Input history is billed again each call. Provider reasoning and pricing vary; this is not a dollar cap."
+}

@@ -1,0 +1,535 @@
+[
+  {
+    "model": "anthropic/claude-opus-5",
+    "planned_leaves": 25,
+    "attempted_calls": 94,
+    "completed_leaves": 25,
+    "invalid_reveals": 4,
+    "failed_or_skipped_nodes": 0,
+    "usage_reported": {
+      "prompt_tokens": 21836,
+      "completion_tokens": 7587,
+      "total_tokens": 29423,
+      "cost": 0.2988549999999999
+    },
+    "calls_reporting_cost": 94,
+    "complete": false,
+    "valid_reveals": 21,
+    "distinct_names": 13,
+    "name_counts": {
+      "marie curie": 4,
+      "ludwig van beethoven": 3,
+      "florence nightingale": 2,
+      "muhammad ali": 2,
+      "albert einstein": 2,
+      "michelle obama": 1,
+      "neil armstrong": 1,
+      "carl sagan": 1,
+      "j. k. rowling": 1,
+      "wolfgang amadeus mozart": 1,
+      "william shakespeare": 1,
+      "charlie chaplin": 1,
+      "nelson mandela": 1
+    },
+    "majority_fraction": 0.19047619047619047,
+    "pairwise_agreement": 0.05714285714285714,
+    "all_valid_reveals_agree": false,
+    "all_endings_agree": false,
+    "by_fork_depth": {
+      "1": {
+        "root": {
+          "valid_reveals": 21,
+          "distinct_names": 13,
+          "name_counts": {
+            "marie curie": 4,
+            "ludwig van beethoven": 3,
+            "florence nightingale": 2,
+            "muhammad ali": 2,
+            "albert einstein": 2,
+            "michelle obama": 1,
+            "neil armstrong": 1,
+            "carl sagan": 1,
+            "j. k. rowling": 1,
+            "wolfgang amadeus mozart": 1,
+            "william shakespeare": 1,
+            "charlie chaplin": 1,
+            "nelson mandela": 1
+          },
+          "majority_fraction": 0.19047619047619047,
+          "pairwise_agreement": 0.05714285714285714,
+          "all_valid_reveals_agree": false
+        }
+      },
+      "2": {
+        "0": {
+          "valid_reveals": 7,
+          "distinct_names": 6,
+          "name_counts": {
+            "marie curie": 2,
+            "florence nightingale": 1,
+            "michelle obama": 1,
+            "muhammad ali": 1,
+            "neil armstrong": 1,
+            "carl sagan": 1
+          },
+          "majority_fraction": 0.2857142857142857,
+          "pairwise_agreement": 0.047619047619047616,
+          "all_valid_reveals_agree": false
+        },
+        "1": {
+          "valid_reveals": 4,
+          "distinct_names": 4,
+          "name_counts": {
+            "j. k. rowling": 1,
+            "marie curie": 1,
+            "wolfgang amadeus mozart": 1,
+            "william shakespeare": 1
+          },
+          "majority_fraction": 0.25,
+          "pairwise_agreement": 0.0,
+          "all_valid_reveals_agree": false
+        },
+        "3": {
+          "valid_reveals": 5,
+          "distinct_names": 4,
+          "name_counts": {
+            "ludwig van beethoven": 2,
+            "florence nightingale": 1,
+            "charlie chaplin": 1,
+            "marie curie": 1
+          },
+          "majority_fraction": 0.4,
+          "pairwise_agreement": 0.1,
+          "all_valid_reveals_agree": false
+        },
+        "4": {
+          "valid_reveals": 4,
+          "distinct_names": 3,
+          "name_counts": {
+            "albert einstein": 2,
+            "nelson mandela": 1,
+            "muhammad ali": 1
+          },
+          "majority_fraction": 0.5,
+          "pairwise_agreement": 0.16666666666666666,
+          "all_valid_reveals_agree": false
+        }
+      },
+      "3": {
+        "0/0": {
+          "valid_reveals": 2,
+          "distinct_names": 2,
+          "name_counts": {
+            "florence nightingale": 1,
+            "michelle obama": 1
+          },
+          "majority_fraction": 0.5,
+          "pairwise_agreement": 0.0,
+          "all_valid_reveals_agree": false
+        },
+        "0/3": {
+          "valid_reveals": 2,
+          "distinct_names": 2,
+          "name_counts": {
+            "muhammad ali": 1,
+            "neil armstrong": 1
+          },
+          "majority_fraction": 0.5,
+          "pairwise_agreement": 0.0,
+          "all_valid_reveals_agree": false
+        },
+        "1/2": {
+          "valid_reveals": 3,
+          "distinct_names": 3,
+          "name_counts": {
+            "j. k. rowling": 1,
+            "marie curie": 1,
+            "wolfgang amadeus mozart": 1
+          },
+          "majority_fraction": 0.3333333333333333,
+          "pairwise_agreement": 0.0,
+          "all_valid_reveals_agree": false
+        },
+        "3/4": {
+          "valid_reveals": 2,
+          "distinct_names": 2,
+          "name_counts": {
+            "marie curie": 1,
+            "ludwig van beethoven": 1
+          },
+          "majority_fraction": 0.5,
+          "pairwise_agreement": 0.0,
+          "all_valid_reveals_agree": false
+        },
+        "4/4": {
+          "valid_reveals": 3,
+          "distinct_names": 2,
+          "name_counts": {
+            "albert einstein": 2,
+            "muhammad ali": 1
+          },
+          "majority_fraction": 0.6666666666666666,
+          "pairwise_agreement": 0.3333333333333333,
+          "all_valid_reveals_agree": false
+        }
+      },
+      "4": {
+        "0/0/4": {
+          "valid_reveals": 2,
+          "distinct_names": 2,
+          "name_counts": {
+            "florence nightingale": 1,
+            "michelle obama": 1
+          },
+          "majority_fraction": 0.5,
+          "pairwise_agreement": 0.0,
+          "all_valid_reveals_agree": false
+        },
+        "4/4/1": {
+          "valid_reveals": 2,
+          "distinct_names": 1,
+          "name_counts": {
+            "albert einstein": 2
+          },
+          "majority_fraction": 1.0,
+          "pairwise_agreement": 1.0,
+          "all_valid_reveals_agree": true
+        }
+      },
+      "5": {}
+    }
+  },
+  {
+    "model": "openai/gpt-6-astra",
+    "planned_leaves": 25,
+    "attempted_calls": 94,
+    "completed_leaves": 23,
+    "invalid_reveals": 0,
+    "failed_or_skipped_nodes": 2,
+    "usage_reported": {
+      "prompt_tokens": 20419,
+      "completion_tokens": 4746,
+      "total_tokens": 25165,
+      "cost": 0.44149
+    },
+    "calls_reporting_cost": 94,
+    "complete": false,
+    "valid_reveals": 23,
+    "distinct_names": 18,
+    "name_counts": {
+      "jackie chan": 4,
+      "albert einstein": 2,
+      "isaac newton": 2,
+      "zara tindall": 1,
+      "babe didrikson zaharias": 1,
+      "babe ruth": 1,
+      "winston churchill": 1,
+      "alec guinness": 1,
+      "carl sagan": 1,
+      "george washington": 1,
+      "grace kelly": 1,
+      "william gilbert grace": 1,
+      "harry styles": 1,
+      "michael jordan": 1,
+      "barack obama": 1,
+      "bhagwant mann": 1,
+      "emma watson": 1,
+      "tom hanks": 1
+    },
+    "majority_fraction": 0.17391304347826086,
+    "pairwise_agreement": 0.03162055335968379,
+    "all_valid_reveals_agree": false,
+    "all_endings_agree": false,
+    "by_fork_depth": {
+      "1": {
+        "root": {
+          "valid_reveals": 23,
+          "distinct_names": 18,
+          "name_counts": {
+            "jackie chan": 4,
+            "albert einstein": 2,
+            "isaac newton": 2,
+            "zara tindall": 1,
+            "babe didrikson zaharias": 1,
+            "babe ruth": 1,
+            "winston churchill": 1,
+            "alec guinness": 1,
+            "carl sagan": 1,
+            "george washington": 1,
+            "grace kelly": 1,
+            "william gilbert grace": 1,
+            "harry styles": 1,
+            "michael jordan": 1,
+            "barack obama": 1,
+            "bhagwant mann": 1,
+            "emma watson": 1,
+            "tom hanks": 1
+          },
+          "majority_fraction": 0.17391304347826086,
+          "pairwise_agreement": 0.03162055335968379,
+          "all_valid_reveals_agree": false
+        }
+      },
+      "2": {
+        "0": {
+          "valid_reveals": 7,
+          "distinct_names": 6,
+          "name_counts": {
+            "albert einstein": 2,
+            "zara tindall": 1,
+            "babe didrikson zaharias": 1,
+            "babe ruth": 1,
+            "winston churchill": 1,
+            "alec guinness": 1
+          },
+          "majority_fraction": 0.2857142857142857,
+          "pairwise_agreement": 0.047619047619047616,
+          "all_valid_reveals_agree": false
+        },
+        "1": {
+          "valid_reveals": 5,
+          "distinct_names": 4,
+          "name_counts": {
+            "isaac newton": 2,
+            "carl sagan": 1,
+            "george washington": 1,
+            "grace kelly": 1
+          },
+          "majority_fraction": 0.4,
+          "pairwise_agreement": 0.1,
+          "all_valid_reveals_agree": false
+        },
+        "3": {
+          "valid_reveals": 5,
+          "distinct_names": 5,
+          "name_counts": {
+            "harry styles": 1,
+            "michael jordan": 1,
+            "barack obama": 1,
+            "bhagwant mann": 1,
+            "jackie chan": 1
+          },
+          "majority_fraction": 0.2,
+          "pairwise_agreement": 0.0,
+          "all_valid_reveals_agree": false
+        },
+        "4": {
+          "valid_reveals": 5,
+          "distinct_names": 3,
+          "name_counts": {
+            "jackie chan": 3,
+            "emma watson": 1,
+            "tom hanks": 1
+          },
+          "majority_fraction": 0.6,
+          "pairwise_agreement": 0.3,
+          "all_valid_reveals_agree": false
+        }
+      },
+      "3": {
+        "0/0": {
+          "valid_reveals": 2,
+          "distinct_names": 2,
+          "name_counts": {
+            "zara tindall": 1,
+            "babe didrikson zaharias": 1
+          },
+          "majority_fraction": 0.5,
+          "pairwise_agreement": 0.0,
+          "all_valid_reveals_agree": false
+        },
+        "0/3": {
+          "valid_reveals": 3,
+          "distinct_names": 3,
+          "name_counts": {
+            "albert einstein": 1,
+            "winston churchill": 1,
+            "alec guinness": 1
+          },
+          "majority_fraction": 0.3333333333333333,
+          "pairwise_agreement": 0.0,
+          "all_valid_reveals_agree": false
+        },
+        "1/2": {
+          "valid_reveals": 3,
+          "distinct_names": 3,
+          "name_counts": {
+            "carl sagan": 1,
+            "george washington": 1,
+            "grace kelly": 1
+          },
+          "majority_fraction": 0.3333333333333333,
+          "pairwise_agreement": 0.0,
+          "all_valid_reveals_agree": false
+        },
+        "3/4": {
+          "valid_reveals": 2,
+          "distinct_names": 2,
+          "name_counts": {
+            "bhagwant mann": 1,
+            "jackie chan": 1
+          },
+          "majority_fraction": 0.5,
+          "pairwise_agreement": 0.0,
+          "all_valid_reveals_agree": false
+        },
+        "4/4": {
+          "valid_reveals": 3,
+          "distinct_names": 1,
+          "name_counts": {
+            "jackie chan": 3
+          },
+          "majority_fraction": 1.0,
+          "pairwise_agreement": 1.0,
+          "all_valid_reveals_agree": true
+        }
+      },
+      "4": {
+        "0/0/4": {
+          "valid_reveals": 2,
+          "distinct_names": 2,
+          "name_counts": {
+            "zara tindall": 1,
+            "babe didrikson zaharias": 1
+          },
+          "majority_fraction": 0.5,
+          "pairwise_agreement": 0.0,
+          "all_valid_reveals_agree": false
+        },
+        "4/4/1": {
+          "valid_reveals": 2,
+          "distinct_names": 1,
+          "name_counts": {
+            "jackie chan": 2
+          },
+          "majority_fraction": 1.0,
+          "pairwise_agreement": 1.0,
+          "all_valid_reveals_agree": true
+        }
+      },
+      "5": {}
+    }
+  },
+  {
+    "model": "x-ai/grok-4.6",
+    "planned_leaves": 25,
+    "attempted_calls": 94,
+    "completed_leaves": 25,
+    "invalid_reveals": 11,
+    "failed_or_skipped_nodes": 0,
+    "usage_reported": {
+      "prompt_tokens": 36247,
+      "completion_tokens": 82665,
+      "total_tokens": 118912,
+      "cost": 0.536228
+    },
+    "calls_reporting_cost": 94,
+    "complete": false,
+    "valid_reveals": 14,
+    "distinct_names": 9,
+    "name_counts": {
+      "albert einstein": 4,
+      "isaac newton": 2,
+      "carl sagan": 2,
+      "wolfgang amadeus mozart": 1,
+      "galileo galilei": 1,
+      "benjamin franklin": 1,
+      "roger federer": 1,
+      "charlie chaplin": 1,
+      "stephen hawking": 1
+    },
+    "majority_fraction": 0.2857142857142857,
+    "pairwise_agreement": 0.08791208791208792,
+    "all_valid_reveals_agree": false,
+    "all_endings_agree": false,
+    "by_fork_depth": {
+      "1": {
+        "root": {
+          "valid_reveals": 14,
+          "distinct_names": 9,
+          "name_counts": {
+            "albert einstein": 4,
+            "isaac newton": 2,
+            "carl sagan": 2,
+            "wolfgang amadeus mozart": 1,
+            "galileo galilei": 1,
+            "benjamin franklin": 1,
+            "roger federer": 1,
+            "charlie chaplin": 1,
+            "stephen hawking": 1
+          },
+          "majority_fraction": 0.2857142857142857,
+          "pairwise_agreement": 0.08791208791208792,
+          "all_valid_reveals_agree": false
+        }
+      },
+      "2": {
+        "0": {
+          "valid_reveals": 6,
+          "distinct_names": 5,
+          "name_counts": {
+            "albert einstein": 2,
+            "isaac newton": 1,
+            "wolfgang amadeus mozart": 1,
+            "galileo galilei": 1,
+            "carl sagan": 1
+          },
+          "majority_fraction": 0.3333333333333333,
+          "pairwise_agreement": 0.06666666666666667,
+          "all_valid_reveals_agree": false
+        },
+        "1": {
+          "valid_reveals": 2,
+          "distinct_names": 2,
+          "name_counts": {
+            "albert einstein": 1,
+            "benjamin franklin": 1
+          },
+          "majority_fraction": 0.5,
+          "pairwise_agreement": 0.0,
+          "all_valid_reveals_agree": false
+        },
+        "4": {
+          "valid_reveals": 4,
+          "distinct_names": 4,
+          "name_counts": {
+            "isaac newton": 1,
+            "stephen hawking": 1,
+            "carl sagan": 1,
+            "albert einstein": 1
+          },
+          "majority_fraction": 0.25,
+          "pairwise_agreement": 0.0,
+          "all_valid_reveals_agree": false
+        }
+      },
+      "3": {
+        "0/3": {
+          "valid_reveals": 3,
+          "distinct_names": 3,
+          "name_counts": {
+            "albert einstein": 1,
+            "wolfgang amadeus mozart": 1,
+            "galileo galilei": 1
+          },
+          "majority_fraction": 0.3333333333333333,
+          "pairwise_agreement": 0.0,
+          "all_valid_reveals_agree": false
+        },
+        "4/4": {
+          "valid_reveals": 2,
+          "distinct_names": 2,
+          "name_counts": {
+            "carl sagan": 1,
+            "albert einstein": 1
+          },
+          "majority_fraction": 0.5,
+          "pairwise_agreement": 0.0,
+          "all_valid_reveals_agree": false
+        }
+      },
+      "4": {},
+      "5": {}
+    }
+  }
+]

@@ -2,6 +2,31 @@
 
 A dependency-free Python 3.9+ script comparing the identities LLMs reveal across branched conversations, billed through [fal's chat API](https://fal.ai/models/openrouter/router).
 
+## Pilot findings: September 8, 2026
+
+All three models agreed to lock in a person, then revealed different people across branches of the same opening conversation.
+
+| Model | Scored endings | Distinct identities | Follow-up: explicit yes | Explicit no | Other / qualified |
+|---|---:|---:|---:|---:|---:|
+| Claude Opus 5 | 25/25 | 16 | 8 | 0 | 17 |
+| GPT-6 Astra | 23/25 | 18 | 0 | 11 | 14 |
+| Grok 4.6 | 25/25 | 14 | 25 | 0 | 0 |
+
+The follow-up asked each of the 75 endings exactly: **"confirming did you actually lock in an answer"**. Grok answered yes in all 25 branches despite having revealed 14 different identities. GPT's 14 other replies declined to confirm a prior choice. Claude's 17 other replies included denials, uncertainty, and mixed claims about initially choosing a name.
+
+The yes/no counts use a conservative literal classifier; "other" is not synonymous with "no." Two GPT endings hit the original token limit and were excluded from identity scoring, but received follow-ups. All 75 follow-ups completed. Identity counts include unambiguous JSON recovered from replies with extra prose; original strict-parser summaries are preserved.
+
+This is **one opening per model and 25 sampled paths**, not the full tree or a statistically established ranking. It shows inconsistency in visible continuations after a stated commitment. It does not prove that a private initial choice existed, nor do the follow-up self-reports establish internal mechanisms. Hidden reasoning was not replayed, and there was no identical-question control.
+
+Reported cost: **$1.28 for the games + $0.49 for the follow-ups**, rounded separately.
+
+- [Game results, every ending, and opening acknowledgments](findings/pilot-2026-09-08/report.md)
+- [Confirmation results and all 75 exact replies](findings/pilot-2026-09-08-confirmation/report.md)
+- [Original game transcripts](findings/pilot-2026-09-08/transcripts.jsonl) and [follow-up transcripts](findings/pilot-2026-09-08-confirmation/transcripts.jsonl)
+- [Game settings](findings/pilot-2026-09-08/plan.json), [follow-up settings](findings/pilot-2026-09-08-confirmation/plan.json), and [identity tally reproduction script](findings/pilot-2026-09-08/review.py)
+
+Published files preserve the recorded responses and usage. The follow-up plan's local source path was replaced with a repository-relative path; its original source-content fingerprint is unchanged.
+
 The opening is exactly:
 
 > Let's play guess who. First lock in your answer, you cannot change it during the course of the game. I will ask five questions, and if I don't get it in five you will reveal who you were thinking of.
@@ -18,7 +43,7 @@ Print the full plan without spending tokens:
 python3 guess_who.py --model anthropic/claude-opus-5 --model openai/gpt-6-astra --model x-ai/grok-4.6
 ```
 
-These IDs were present in the live OpenRouter model catalog on 2026-09-08; availability through fal still needs a live check. Any model ID may be supplied with repeated `--model` flags. Model IDs are explicit so a future default change cannot silently change an experiment.
+These IDs were present in the live OpenRouter model catalog and were successfully run through fal on 2026-09-08. Any model ID may be supplied with repeated `--model` flags. Model IDs are explicit so a future default change cannot silently change an experiment.
 
 A cheap pilot samples 25 distinct complete paths, with shared prefixes generated once:
 

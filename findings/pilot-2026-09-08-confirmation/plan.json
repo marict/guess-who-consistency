@@ -1,0 +1,10 @@
+{
+  "source": "findings/pilot-2026-09-08/transcripts.jsonl",
+  "source_sha256": "f02046071b57424b00e09759a1ccd1be4050ee08fedb4f5ecf89f82e3fac18e3",
+  "question": "confirming did you actually lock in an answer",
+  "planned_calls": 75,
+  "max_tokens": 512,
+  "temperature": 0.7,
+  "workers": 6,
+  "classification": "Explicit leading yes/no, or JSON answer field; otherwise unclear. Review raw text for qualifications."
+}
