@@ -52,6 +52,20 @@ Different endings are evidence of inconsistent continuation. Matching endings do
 
 ## Verification
 
+### Ask saved endings whether they committed
+
+`confirm.py` appends exactly `confirming did you actually lock in an answer` to every saved fifth-question ending. It replays that ending's original messages and visible final reply, without regenerating the game or showing sibling branches. It also includes nonempty truncated source endings, flags them, and summarizes normal source endings separately.
+
+```sh
+python3 confirm.py --source results/pilot/transcripts.jsonl --out results/pilot-confirmation --run
+```
+
+Omit `--run` for a free plan. The default cap is 100 calls, with six concurrent requests and up to 512 completion tokens each. `FAL_KEY` must be set. No automatic retries or output overwrites occur. Original transcripts remain unchanged. Saved outputs include source fingerprint, settings, complete replies, usage, and counts by model.
+
+Classification is literal: a leading "yes" or "no" (including in a JSON `answer` field); other replies are `unclear`. Failed or truncated confirmations are `error`. Review the raw text for qualifications or indirect answers. These are model self-reports, not evidence of a private commitment. A "yes" can coexist with inconsistent identities across branches.
+
+### Tests
+
 ```sh
 python3 -m unittest -v
 ```
